@@ -11,6 +11,7 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom"
         android:layout_below="@+id/topofthechat"
+        android:id="@+id/recylview"
         android:padding="8dp">
 
 
@@ -84,7 +85,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-            android:id="@+id/bottom"
+            android:id="@+id/bottomofthechat"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_alignParentBottom="true">
