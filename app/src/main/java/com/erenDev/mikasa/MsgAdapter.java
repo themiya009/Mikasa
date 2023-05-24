@@ -13,9 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class MsgAdapter extends RecyclerView.Adapter<MsgAdapter.MyViewHolder>{
-    List<Message> msglist;
-    public MsgAdapter(List<Message> msglist){
-        this.msglist = msglist;
+    List<Message> messageList;
+    public MsgAdapter(List<Message> messageList){
+        this.messageList = messageList;
     }
 
     @NonNull
@@ -29,8 +29,8 @@ public class MsgAdapter extends RecyclerView.Adapter<MsgAdapter.MyViewHolder>{
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        Message message = msglist.get(position);
-        if(message.sentBy.equals(Message.Sent_By_Me)){
+        Message message = messageList.get(position);
+        if(message.getSentBy().equals(Message.Sent_By_Me)){
             holder.leftChat.setVisibility(View.GONE);
             holder.rightChat.setVisibility(View.VISIBLE);
             holder.rightTv.setText(message.getMessage());
@@ -44,7 +44,7 @@ public class MsgAdapter extends RecyclerView.Adapter<MsgAdapter.MyViewHolder>{
 
     @Override
     public int getItemCount() {
-        return 0;
+        return messageList.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
