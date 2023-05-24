@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Mikasa" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Primary color -->
+        <item name="colorPrimary">@color/lavender</item>
+        <!-- Primary color -->
+        <item name="colorSecondary">@color/light_blue</item>
+        <!-- Status Bar Theme color -->
+        <item name="android:statusBarColor">@color/lavender</item>
+
+
+
+
+    </style>
+
+    <style name="Theme.Mikasa" parent="Base.Theme.Mikasa" />
+
+</resources>

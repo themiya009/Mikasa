@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "686065157803",
+    "project_id": "mikasa-5c141",
+    "storage_bucket": "mikasa-5c141.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686065157803:android:e158593ab2603a488819ee",
+        "android_client_info": {
+          "package_name": "com.erenDev.mikasa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686065157803-4ia6hc3hj4h0pruu5j0qllpf1p1b3ckc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKdZGhimV5otc37jUb98ynsgeGH3nWbsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686065157803-4ia6hc3hj4h0pruu5j0qllpf1p1b3ckc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
