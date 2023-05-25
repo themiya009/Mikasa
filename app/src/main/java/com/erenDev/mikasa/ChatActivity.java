@@ -9,7 +9,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -69,6 +71,20 @@ public class ChatActivity extends AppCompatActivity {
             callOpenAPI(qst);
         }));
 
+        backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ChatActivity.this, MainActivity.class));
+            }
+        });
+
+        infobtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ChatActivity.this, AboutdevActivty.class));
+            }
+        });
+
     }
 
     void addtxtToChat(String message, String sentBy) {
@@ -100,7 +116,7 @@ public class ChatActivity extends AppCompatActivity {
         RequestBody body = RequestBody.create(jsonbdy.toString(),JSON);
         Request req = new Request.Builder()
                 .url("https://api.openai.com/v1/completions")
-                .header("Authorization", "Bearer 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")
+                .header("Authorization", "Bearer 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")
                 .post(body)
                 .build();
 
